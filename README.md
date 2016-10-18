@@ -1,23 +1,29 @@
 # ch340g-ch34g-ch34x-mac-os-x-driver
-Latest driver for devices CH340G CH34G CH34X, Mac OS X Sierra compatible.
+Latest **macOS Sierra**-compatible driver for devices using the CH340G, CH34G or CH34X chipset. This chipset is used in several Arduino-clones.
 
-With old driver I got kernel panic after connecting a CH340G device (Arduino, etc.), this is the latest driver with full support for Mac OS X Sierra.
+## Introduction
 
-Installation:
+Version 1.3 (2016-09-27) of the [OEM driver](http://www.wch.cn/download/CH341SER_MAC_ZIP.html) for the CH34x chipset currently causes a kernel panic (a.k.a. *crash*) when installed on **macOS Sierra**. To resolve this issue, please download and install the driver in this repo.
+
+## Installation
 
 * Remove the old driver by issuing one of the following commands (depending on your installation):
   * `sudo rm -rf /System/Library/Extensions/usb.kext`
   * `sudo rm -rf /Library/Extensions/usbserial.kext`
-*  Restart your Mac
-*  Click on CH34x_Install_V1.3.pkg
 *  Restart your Mac.
-*  Plug in your device, mine is now accessible at /dev/cu.wchusbserial1410
+*  Double-click on the `CH34x_Install_V1.3.pkg` file.
+*  Restart your Mac.
+*  Plug in your device. It should now be listed under the `/dev` directory. Examples:
+  * `/dev/cu.wchusbserial1410`
+  * `/dev/cu.wchusbserial1420`
 
-If after installation the device is not recognized /or you cannot install the driver/, please disable System Integrity Protection (I had already disabled, because I had the old driver installed):
+## Troubleshooting
 
-*  Reboot your Mac into Recovery Mode by restarting your computer and holding down Command+R until the Apple logo appears on your screen.
-*  Click Utilities > Terminal.
-*  In the Terminal window, type in csrutil enable --without kext (or to fully disable: csrutil disable) and press Enter.
+If, and only if, the device is not recognized after the installation (or you cannot install the driver), please disable *System Integrity Protection*:
+
+*  Reboot your Mac into *Recovery Mode* by restarting your computer and holding down `Command+R` until the Apple logo appears on screen.
+*  Open the Terminal (Applications > Utilities > Terminal).
+*  In the Terminal window, type in `csrutil enable --without kext` (or to fully disable: `csrutil disable`) and press `Enter`.
 *  Restart your Mac.
 
 Please share this page!
