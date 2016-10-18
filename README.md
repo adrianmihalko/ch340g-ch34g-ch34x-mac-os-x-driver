@@ -5,7 +5,9 @@ With old driver I got kernel panic after connecting a CH340G device (Arduino, et
 
 Installation:
 
-* Remove the old driver: sudo rm -rf /System/Library/Extensions/usb.kext
+* Remove the old driver by issuing one of the following commands (depending on your installation):
+  * `sudo rm -rf /System/Library/Extensions/usb.kext`
+  * `sudo rm -rf /Library/Extensions/usbserial.kext`
 *  Restart your Mac
 *  Click on CH34x_Install_V1.3.pkg
 *  Restart your Mac.
