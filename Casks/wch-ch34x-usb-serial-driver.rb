@@ -10,7 +10,7 @@ cask 'wch-ch34x-usb-serial-driver' do
 
   pkg 'CH34x_Install_V1.3.pkg'
 
-  uninstall pkgutil: 'com.wch.usbserial.pkg',
+  uninstall pkgutil: 'com.wch.usbserial',
             kext:    'com.wch.usbserial',
             delete:  [
                        '/System/Library/Extensions/usb.kext',
