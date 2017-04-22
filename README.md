@@ -17,6 +17,13 @@ Version 1.3 (2016-09-27) of the [OEM driver](http://www.wch.cn/download/CH341SER
   * `/dev/cu.wchusbserial1410`
   * `/dev/cu.wchusbserial1420`
 
+## Installation with Homebrew-Cask
+
+* Install the driver by the following commands:
+  * `brew tap mengbo/ch340g-ch34g-ch34x-mac-os-x-driver https://github.com/mengbo/ch340g-ch34g-ch34x-mac-os-x-driver`
+  * `brew cask install wch-ch34x-usb-serial-driver`
+
+
 ## Troubleshooting
 
 If, and only if, the device is not recognized after the installation (or you cannot install the driver), please disable *System Integrity Protection*:
