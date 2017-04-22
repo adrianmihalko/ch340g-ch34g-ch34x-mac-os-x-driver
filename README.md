@@ -1,5 +1,5 @@
 # ch340g-ch34g-ch34x-mac-os-x-driver
-Latest **macOS Sierra**-compatible driver for devices using the CH340G, CH34G or CH34X chipset. This chipset is used in several Arduino-clones.
+Latest **macOS Sierra**-compatible driver for devices using the CH340G, CH34G or CH34X chipset. This chipset is used in several Arduino-compatible clones and serial-to-USB cables.
 
 ## Introduction
 
