@@ -2,8 +2,9 @@
 Latest **macOS Sierra**-compatible driver for devices using the CH340G, CH34G or CH34X chipset. This chipset is used in several Arduino-compatible clones and serial-to-USB cables.
 
 ## Introduction
+Version 1.4 (2017-01-11) of the [OEM driver](http://www.wch.cn/download/CH341SER_MAC_ZIP.html) for the CH34x chipset.
 
-Version 1.3 (2016-09-27) of the [OEM driver](http://www.wch.cn/download/CH341SER_MAC_ZIP.html) for the CH34x chipset currently causes a kernel panic (a.k.a. *crash*) when installed on **macOS Sierra**. To resolve this issue, please download and install the driver in this repo.
+Version 1.3 (2016-09-27) of the OEM driver causes a kernel panic (a.k.a. *crash*) when installed on **macOS Sierra**.
 
 ## Installation
 
@@ -25,6 +26,10 @@ Version 1.3 (2016-09-27) of the [OEM driver](http://www.wch.cn/download/CH341SER
 
 
 ## Troubleshooting
+
+Note: **disabling System Integrity Protection is no longer necessary**, as the current drivers are now properly signed by the OEM. If you're having problems, they're almost certainly not related to SIP. The instructions below are left only for reference purposes. 
+
+If you update to current drivers, [**it is strongly recommended that you re-enable SIP.**](https://developer.apple.com/library/content/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html)
 
 If, and only if, the device is not recognized after the installation (or you cannot install the driver), please disable *System Integrity Protection*:
 
