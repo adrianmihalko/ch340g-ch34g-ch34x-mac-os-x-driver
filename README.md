@@ -27,6 +27,8 @@ Version 1.3 (2016-09-27) of the OEM driver causes a kernel panic (a.k.a. *crash*
 
 ## Troubleshooting
 
+If the device doesn't show up under `/dev`, check the section "Security and Privacy" in System Preferences for any notices about blocked software.
+
 Note: **disabling System Integrity Protection is no longer necessary**, as the current drivers are properly signed by the OEM. If you're having problems, they're almost certainly not related to SIP. The instructions below are left only for reference purposes. If you had previously disabled it (*especially* if you did so completely), [**you are strongly encouraged to fully re-enable SIP.**](https://developer.apple.com/library/content/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html)
 
 If, and only if, the device is not recognized after the installation (or you cannot install the driver), please disable *System Integrity Protection*:
