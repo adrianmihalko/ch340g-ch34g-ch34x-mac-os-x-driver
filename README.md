@@ -1,5 +1,5 @@
 # ch340g-ch34g-ch34x-mac-os-x-driver
-Latest **macOS Sierra**-compatible driver for devices using the CH340G, CH34G or CH34X chipset. This chipset is used in several Arduino-compatible clones and serial-to-USB cables.
+Latest **macOS Sierra/High Sierra**-compatible driver for devices using the CH340G, CH34G or CH34X chipset. This chipset is used in several Arduino-compatible clones and serial-to-USB cables.
 
 ## Introduction
 Version 1.4 (2017-01-11) of the [OEM driver](http://www.wch.cn/download/CH341SER_MAC_ZIP.html) for the CH34x chipset.
@@ -8,12 +8,17 @@ Version 1.3 (2016-09-27) of the OEM driver causes a kernel panic (a.k.a. *crash*
 
 ## Installation
 
-* Remove the old driver by issuing one of the following commands (depending on your installation):
+*  Unplug any CH34* devices.
+*  Unload the old drivers if running:
+  * `sudo kext unload /Library/Extensions/usbserial.kext`
+  * `sudo kext unload /System/Library/Extensions/usb.kext`
+*  Remove the old driver by issuing one of the following commands (depending on your installation):
   * `sudo rm -rf /System/Library/Extensions/usb.kext`
   * `sudo rm -rf /Library/Extensions/usbserial.kext`
-*  Restart your Mac.
-*  Double-click on the `CH34x_Install_V1.3.pkg` file.
-*  Restart your Mac.
+*  Double-click on the `CH34x_Install_V1.3.pkg` file and install (no need to reboot)
+*  Instead of rebooting, you can force quit Installer after it completes.
+*  Load the new driver:
+  * `sudo kextload /Library/Extensions/usbserial.kext`
 *  Plug in your device. It should now be listed under the `/dev` directory. Examples:
   * `/dev/cu.wchusbserial1410`
   * `/dev/cu.wchusbserial1420`
