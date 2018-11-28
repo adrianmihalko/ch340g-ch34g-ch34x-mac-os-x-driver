@@ -4,7 +4,7 @@ Latest **macOS Sierra/High Sierra**-compatible driver for devices using the CH34
 ## Introduction
 Version 1.5 (2018-07-05) of the [OEM driver](http://www.wch.cn/download/CH341SER_MAC_ZIP.html) for the CH34x chipset.
 
-Version 1.4 (2017-01-11) 
+Version 1.4 (2017-01-11) of the [OEM driver](http://www.wch.cn/download/CH341SER_MAC_ZIP.html) for the CH34x chipset.
 
 Version 1.3 (2016-09-27) of the OEM driver causes a kernel panic (a.k.a. *crash*) when installed on **macOS Sierra**.
 
