@@ -12,8 +12,8 @@ Version 1.3 (2016-09-27) of the OEM driver causes a kernel panic (a.k.a. *crash*
 
 *  Unplug any CH34* devices.
 *  Unload the old drivers if running:
-  * `sudo kext unload /Library/Extensions/usbserial.kext`
-  * `sudo kext unload /System/Library/Extensions/usb.kext`
+  * `sudo kextunload /Library/Extensions/usbserial.kext`
+  * `sudo kextunload /System/Library/Extensions/usb.kext`
 *  Remove the old driver by issuing one of the following commands (depending on your installation):
   * `sudo rm -rf /System/Library/Extensions/usb.kext`
   * `sudo rm -rf /Library/Extensions/usbserial.kext`
