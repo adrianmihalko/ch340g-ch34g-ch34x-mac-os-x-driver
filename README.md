@@ -10,20 +10,20 @@ Version 1.3 (2016-09-27) of the OEM driver causes a kernel panic (a.k.a. *crash*
 
 ## Installation
 
-*  Unplug any CH34* devices.
-*  Unload the old drivers if running:
-  * `sudo kextunload /Library/Extensions/usbserial.kext`
-  * `sudo kextunload /System/Library/Extensions/usb.kext`
-*  Remove the old driver by issuing one of the following commands (depending on your installation):
-  * `sudo rm -rf /System/Library/Extensions/usb.kext`
-  * `sudo rm -rf /Library/Extensions/usbserial.kext`
-*  Double-click on the `CH34x_Install_V1.3.pkg` file and install (no need to reboot)
-*  Instead of rebooting, you can force quit Installer after it completes.
-*  Load the new driver:
-  * `sudo kextload /Library/Extensions/usbserial.kext`
-*  Plug in your device. It should now be listed under the `/dev` directory. Examples:
-  * `/dev/cu.wchusbserial1410`
-  * `/dev/cu.wchusbserial1420`
+1.  Unplug any CH34* devices.
+1.  Unload the old drivers if running:
+    * `sudo kextunload /Library/Extensions/usbserial.kext`
+    * `sudo kextunload /System/Library/Extensions/usb.kext`
+1.  Remove the old driver by issuing one of the following commands (depending on your installation):
+    * `sudo rm -rf /System/Library/Extensions/usb.kext`
+    * `sudo rm -rf /Library/Extensions/usbserial.kext`
+1.  Double-click on the `CH34x_Install_V1.5.pkg` file and install (no need to reboot)
+1.  Instead of rebooting, you can force quit Installer after it completes.
+1.  Load the new driver:
+    * `sudo kextload /Library/Extensions/usbserial.kext`
+1.  Plug in your device. It should now be listed under the `/dev` directory. Examples:
+    * `/dev/cu.wchusbserial1410`
+    * `/dev/tty.wchusbserial14210` (driver version 1.5)
 
 ## Installation with Homebrew-Cask
 
