@@ -28,7 +28,7 @@ Version 1.3 (2016-09-27) of the OEM driver causes a kernel panic (a.k.a. *crash*
 ## Installation with Homebrew-Cask
 
 * Install the driver by the following commands:
-  * `brew tap mengbo/ch340g-ch34g-ch34x-mac-os-x-driver https://github.com/mengbo/ch340g-ch34g-ch34x-mac-os-x-driver`
+  * `brew tap adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver`
   * `brew cask install wch-ch34x-usb-serial-driver`
 
 
