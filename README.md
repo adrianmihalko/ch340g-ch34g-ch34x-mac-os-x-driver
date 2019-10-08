@@ -1,7 +1,7 @@
 # ch340g-ch34g-ch34x-mac-os-x-driver
 Latest **macOS Sierra/High Sierra**-compatible driver for devices using the CH340G, CH34G or CH34X chipset. This chipset is used in several Arduino-compatible clones and serial-to-USB cables.
 
-**Do not install if you have the current macOS Mojave 10.14 or later.** macOS Mojave 10.14 (released in October 2018) includes a CH34x driver by Apple. If both Apple's and the OEM driver are installed, they will create conflicting non-functional serial ports. Steps 1 to 3 below can be useful to remove the conflicting OEM drivers.
+**Do not install if you have the current macOS Mojave 10.14 or later.** macOS Mojave 10.14 (released in September 2019) includes a CH34x driver by Apple. If both Apple's and the OEM driver are installed, they will create conflicting non-functional serial ports. Steps 1 to 3 below can be useful to remove the conflicting OEM drivers.
 
 If you use Apple's driver and have problems with the serial communication, ensure the data rate is 460,800 bps or lower.
 
