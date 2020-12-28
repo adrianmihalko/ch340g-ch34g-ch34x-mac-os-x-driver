@@ -6,8 +6,6 @@ cask 'wch-ch34x-usb-serial-driver' do
   name 'WCH USB serial driver for CH340/CH341 (unofficial release)'
   homepage 'https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver'
 
-  license :gratis
-
   pkg 'CH34x_Install_V1.5.pkg'
 
   uninstall pkgutil: 'com.wch.usbserial',
