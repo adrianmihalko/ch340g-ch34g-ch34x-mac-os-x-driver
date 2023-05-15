@@ -49,8 +49,11 @@ If, and only if, the device is not recognized after the installation (or you can
 *  In the Terminal window, type in `csrutil enable --without kext` (or to fully disable: `csrutil disable`) and press `Enter`.
 *  Restart your Mac.
 
-Please share this page!
+## MacBook with Thunderbolt
 
+If after completing all the instructions, the board **does not receive power**. Use `usb hub` with usb controller, for example `USB2514B-AEZC`.
+
+Please share this page!
 Regards,  
 Adrian Mihalko  
 www.mihalko.eu
